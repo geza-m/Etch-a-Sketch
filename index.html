@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Etch-a-Sketch</title>
+
+    <script src="https://kit.fontawesome.com/8c1ccae466.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <H1>PIXELS</H1>
+    <div id="maincontainer">
+        <div id="container"></div>
+        <div id='colormenu' class="floatingmenu">
+            <div class="flexrow">
+                    <input type="color" id="colorPicker" name="colorPicker" value="#40c6e7">
+            </div>
+
+            <div id="palette">
+                <div class="swatch clickable"></div>
+            </div>
+        </div>
+        <div id='toolsMenu' class="floatingmenu">
+     
+            <i id='pen' class="fa-solid fa-paintbrush toolIcon clickable">
+                <span class="tooltiptext">Pen</span>
+            </i>
+            <i id='bucket' class="fa-solid fa-fill-drip toolIcon clickable" >
+                <span class="tooltiptext">Paint Bucket</span>
+            </i>
+            <i id='resize' class="fa-solid fa-up-right-and-down-left-from-center toolIcon clickable">
+                <span class="tooltiptext">Resize Canvas</span>
+            </i>
+            <i id='save' class="fa-solid fa-download toolIcon clickable">
+                <span class="tooltiptext">Save Canvas</span>
+            </i>
+            <i id='load' class="fa-solid fa-upload toolIcon clickable">
+                <span class="tooltiptext">Load Canvas</span>
+            </i>
+            <i id='eraseCanvas' class="fa-solid fa-trash-can toolIcon clickable">
+                <span class="tooltiptext">Erase Canvas</span>
+            </i>
+        </div>
+        <div id="resizemenu" class="floatingmenu">
+            <div>
+                <div>
+                    <label for="width">Width</label>
+                    <label for="height">Height</label>
+                </div>
+                <div>
+                    <input type="number" id="widthinput" name="width" min="2" max="64">
+                    <input type="number" id="heightinput" name="height" min="2" max="64">
+                </div>
+            </div>
+            <div>
+                <button id="resizeOk">Resize</button>
+                <button id="resizeCancel">Cancel</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
